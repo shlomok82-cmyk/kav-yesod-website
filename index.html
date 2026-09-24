@@ -66,21 +66,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extra.css">
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#top">דלג לתוכן</a>
+  <div id="site-bg" aria-hidden="true"></div>
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="קו יסוד - דף הבית">
-        <span class="brand-he">קו יסוד</span>
-        <span class="brand-en">BaseLine</span>
+        <span class="brand-he" data-i18n="brand.he">קו יסוד</span>
+        <span class="brand-en" data-i18n="brand.en">BaseLine</span>
       </a>
       <nav>
-        <a href="#services">שירותים</a>
-        <a href="#about">אודות</a>
-        <a href="#approach">איך אני עובד</a>
-        <a href="#contact">יצירת קשר</a>
+        <a data-i18n="nav.services" href="#services">שירותים</a>
+        <a data-i18n="nav.about" href="#about">אודות</a>
+        <a data-i18n="nav.approach" href="#approach">איך אני עובד</a>
+        <a data-i18n="nav.contact" href="#contact">יצירת קשר</a>
       </nav>
-      <a class="nav-cta" href="https://wa.me/972532751232" target="_blank" rel="noopener">דברו איתי</a>
+      <div class="nav-actions">
+        <button id="lang-toggle" aria-label="Change language">EN</button>
+        <a id="nav-cta" class="nav-cta" href="https://wa.me/972532751232" target="_blank" rel="noopener" data-i18n="cta.contact">דברו איתי</a>
+      </div>
     </div>
   </header>
 

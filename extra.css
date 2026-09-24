@@ -1,0 +1,7 @@
+/* extra styles: skip link, language toggle, and site background */
+.skip-link{position:absolute;left:12px;top:12px;background:#17212b;color:#fff;padding:8px 12px;border-radius:6px;z-index:60;transform:translateY(-120%);transition:transform .18s}
+.skip-link:focus{transform:none}
+.nav-actions{display:flex;gap:12px;align-items:center}
+#lang-toggle{background:transparent;border:1px solid rgba(23,33,43,.12);padding:8px 10px;border-radius:6px;cursor:pointer}
+#site-bg{position:fixed;inset:0;z-index:-1;background-position:center center;background-size:cover;background-repeat:no-repeat;transition:opacity .6s ease}
+@media (prefers-reduced-motion:reduce){#site-bg, * {transition:none!important}}
